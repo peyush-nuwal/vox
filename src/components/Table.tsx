@@ -1,13 +1,13 @@
 'use client'
-import { Calendar, ChevronDown, CircleUserRound, Clock, EllipsisVertical, Headset, Phone, Plus, Search, User } from 'lucide-react';
-import React, { useEffect, useRef, useState } from 'react'
+import { Calendar, ChevronDown, CircleUserRound, Clock, EllipsisVertical, Headset, Phone, Plus, Search } from 'lucide-react';
+import React, { useEffect,  useState } from 'react'
 import Dropdown from './Dropdown';
 
 import CircularProgress from "@mui/joy/CircularProgress";
 import { motion } from 'motion/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/Redux/store';
-import { setFilterType, setSearchQuery } from '@/Redux/slices/ConversationSlice';
+import {  setSearchQuery } from '@/Redux/slices/ConversationSlice';
 
 
 const Table = () => {
