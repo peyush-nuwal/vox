@@ -57,7 +57,7 @@ const Table = () => {
               <input
                 type="text"
                 placeholder="Type here"
-                onChange={(e)=>onValueChange(e)}
+                onChange={(e) => onValueChange(e)}
                 value={query}
                 className="bg-white border outline-none h-full w-full rounded-md pl-8 pr-2"
               />
@@ -145,7 +145,11 @@ const Table = () => {
                   </div>
                   <div className="col-span-1 text-lg  text-start whitespace-nowrap ">
                     <div
-                      onClick={() => setMenuOpen(conv.id)}
+                      onClick={() =>
+                        setMenuOpen((prev) =>
+                          prev === conv.id ? null : conv.id
+                        )
+                      }
                       className="relative h-fit     ml-4 "
                     >
                       <div className="w-fit  border rounded-lg p-2 flex  items-center cursor-pointer">
